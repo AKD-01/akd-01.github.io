@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+body {
+  background-color: rgb(26, 25, 25);
+      font-family: "Josefin Sans", sans-serif;
+
+}
+.nav {
+    color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+
+}
+.left {
+  padding: 1rem;
+  font-size: 2rem;
+color: #a3a0ff;
+}
+.right {
+    margin-top: .5rem;
+  display: flex;
+}
+.right a{
+    text-decoration: none;
+    color: inherit;
+}
+.right li {
+  padding: 1rem;
+  list-style: none;
+}
+#tv {
+    margin: auto;
+    padding: 1rem;
+position: relative;
+width: 90vw;
+height: max-content;
+background: rgb(24, 23, 23);
+border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+box-shadow: 20px 20px rgba(0,0,0,.15);
+transition: all .4s ease;
+}
+#tv:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(153, 148, 148, 0.25);
+}
+.title{
+    font-size: 2rem;
+    color: #7a18ec;
+}
+.content{
+    color: whitesmoke;
+}
+button {
+    background-color: black;
+  position: relative;
+  width: 180px;
+  height: 60px;
+  margin: 20px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transition: .5s;
+  border: 1px solid #7a18ec;
+}
+  button:hover {
+    border: 1px solid transparent;
+      background: #7a18ec url(https://i.postimg.cc/FzBWFtKM/pixel2.png); 
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: animate .8s steps(8) forwards;
+  }
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
