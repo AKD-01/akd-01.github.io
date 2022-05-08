@@ -80,3 +80,7 @@ button {
     background-position-y: -480px;
   }
 }
+ button a{
+   text-decoration: none;
+   color: inherit;
+  }
