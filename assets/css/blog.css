@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 body {
   background-color: rgb(26, 25, 25);
-      font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 
 }
 .nav {
-    color: aliceblue;
+  color: aliceblue;
   display: flex;
   justify-content: space-between;
 
@@ -13,11 +13,11 @@ body {
 .left {
   padding: 1rem;
   font-size: 2rem;
-color: #a3a0ff;
+  color: #a3a0ff;
 }
 .right {
     margin-top: .5rem;
-  display: flex;
+    display: flex;
 }
 .right a{
     text-decoration: none;
@@ -45,18 +45,21 @@ transition: all .4s ease;
 .title{
     font-size: 2rem;
     color: #7a18ec;
+    text-decoration: underline;
 }
 .content{
     color: whitesmoke;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 button {
-    background-color: black;
+  background-color: black;
   position: relative;
   width: 180px;
   height: 60px;
   margin: 20px;
   line-height: 60px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
