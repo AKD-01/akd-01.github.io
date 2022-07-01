@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
     <title>React - Handling Events</title>
-    <link rel="stylesheet" href="../assets/css/blog.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
     <div class="nav">
-        <div class="left">REACT - Handling Events</div>
-        <div class="right">
-                <li><a href="../blog.html"><u>Back to Main Page</u></a></li>
-        </div>
+      <div class="left">REACT - Handling Events</div>
+      <div class="right">
+        <li>
+          <a href="../blog.html"><u>Back to Main Page</u></a>
+        </li>
+      </div>
     </div>
-    <hr>
+    <hr />
     <div class="blogcont" id="tv">
-        <div class="content">
-            <p>Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:</p>
-            <ul>
-                <li>React events are named using camelCase, rather than using lowercase like DOM elements.</li>
-                <li>With JSX one can pass a function as the event handler, rather than a string.</li>
-            </ul>
-            <p>React Events occur on various actions like user action or system-generated events. For eg: window resize, web page loading, keypress, mouse hover, mouse click, and many other interactive actions are known as events.</p>
-            <p>React consists of its own events handling systems which are very similar in the way we use to handling events on DOM elements. And event handling in react known as Synthetic events. The synthetic event is a cross-browser wrapper of the browser’s native event.</p>
-            <p><br/></p>
-            <img width="400px" style="border-radius:2rem" src="https://static.javatpoint.com/tutorial/reactjs/images/react-events.png" alt="Event Handlers" />
-            <p><br/><b>Event Declaration in the HTML:</b></p>
-            <p></p>
-            </div>
-            </div>
+      <div class="content">
+        <p>
+          Handling events with React elements is very similar to handling events
+          on DOM elements. There are some syntax differences:
+        </p>
+        <ul>
+          <li>
+            React events are named using camelCase, rather than using lowercase
+            like DOM elements.
+          </li>
+          <li>
+            With JSX one can pass a function as the event handler, rather than a
+            string.
+          </li>
+        </ul>
+        <p>For example, the HTML:</p>
+        <pre><code class="html"><p>&lt;button onclick="activateLasers()"&gt;
+  Activate Lasers
+&lt;/button&gt;</p></code></pre>
+        <p>is slightly different in React:</p>
+        <pre><code class="html">&lt;button onClick={activateLasers}&gt;  Activate Lasers
+&lt;/button&gt;</code></pre>
+        <p>
+          Another difference is that you cannot return false to prevent default
+          behavior in React. You must call preventDefault explicitly. For
+          example, with plain HTML, to prevent the default form behavior of
+          submitting, you can write:
+        </p>
+        <pre><code class="html">&lt;form onsubmit="console.log('You clicked submit.'); return false"&gt;
+  &lt;button type="submit">Submit&lt;/button &gt;
+&lt;/form &gt;</code></pre>
+<p>In React, this could instead be:</p>
+<pre><code class="javascript">function Form() {
+  function handleSubmit(e) {
+    e.preventDefault();    console.log('You clicked submit.');
+  }
 
-</body>
+  return (
+    &lt;form onSubmit={handleSubmit}&gt;
+      &lt;button type="submit"Submit&gt;&lt;/button &gt;
+    &lt;/&form&gt;
+      );
+}</code></pre>
+        <p>
+          React Events occur on various actions like user action or
+          system-generated events. For eg: window resize, web page loading,
+          keypress, mouse hover, mouse click, and many other interactive actions
+          are known as events.
+        </p>
+        <p>
+          React consists of its own events handling systems which are very
+          similar in the way we use to handling events on DOM elements. And
+          event handling in react known as Synthetic events. The synthetic event
+          is a cross-browser wrapper of the browser’s native event.
+        </p>
+        <p><br /></p>
+        <img
+          width="400px"
+          style="border-radius: 2rem"
+          src="https://static.javatpoint.com/tutorial/reactjs/images/react-events.png"
+          alt="Event Handlers"
+        />
+        <p><br /><b>Event Declaration in the HTML:</b></p>
+        <p></p>
+      </div>
+    </div>
+  </body>
 </html>
