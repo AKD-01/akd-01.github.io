@@ -2,13 +2,27 @@
 body {
   background-color: rgb(26, 25, 25);
   font-family: "Josefin Sans", sans-serif;
-
 }
 .nav {
   color: aliceblue;
   display: flex;
   justify-content: space-between;
-
+}
+h2{
+  color: tan;
+  text-decoration: underline;
+}
+#reurl{
+  background-color: #a3a0ff;
+  text-decoration: underline;
+  color: black;
+}
+#reurl:hover{
+  background-color: aquamarine;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 .left {
   padding: 1rem;
@@ -16,41 +30,46 @@ body {
   color: #a3a0ff;
 }
 .right {
-    margin-top: .5rem;
-    display: flex;
+  margin-top: 0.5rem;
+  display: flex;
 }
-.right a{
-    text-decoration: none;
-    color: inherit;
+.right a {
+  text-decoration: none;
+  color: inherit;
 }
 .right li {
   padding: 1rem;
   list-style: none;
 }
+.image{
+  text-align: center;
+}
 #tv {
-    margin: auto;
-    padding: 1rem;
-position: relative;
-width: 90vw;
-height: max-content;
-background: rgb(24, 23, 23);
-border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
-box-shadow: 20px 20px rgba(0,0,0,.15);
-transition: all .4s ease;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+  width: 90vw;
+  height: max-content;
+  background: rgb(24, 23, 23);
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  padding-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 #tv:hover {
-  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
   box-shadow: 10px 10px rgba(153, 148, 148, 0.25);
 }
-.title{
-    font-size: 2rem;
-    color: #7a18ec;
-    text-decoration: underline;
+.title {
+  font-size: 2rem;
+  color: #7a18ec;
+  text-decoration: underline;
 }
-.content{
-    color: whitesmoke;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+.content {
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 button {
   background-color: black;
@@ -64,16 +83,16 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
   border: 1px solid #7a18ec;
 }
-  button:hover {
-    border: 1px solid transparent;
-      background: #7a18ec url(https://i.postimg.cc/FzBWFtKM/pixel2.png); 
-    transition-delay: 0.8s;
-    background-size: 180px;
-    animation: animate .8s steps(8) forwards;
-  }
+button:hover {
+  border: 1px solid transparent;
+  background: #7a18ec url(https://i.postimg.cc/FzBWFtKM/pixel2.png);
+  transition-delay: 0.8s;
+  background-size: 180px;
+  animation: animate 0.8s steps(8) forwards;
+}
 
 @keyframes animate {
   0% {
@@ -83,10 +102,11 @@ button {
     background-position-y: -480px;
   }
 }
- button a{
-   text-decoration: none;
-   color: inherit;
-  }
-img{
-  width:90vw;
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 70vw;
+  margin: auto;
 }
