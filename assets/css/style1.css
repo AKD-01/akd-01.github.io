@@ -274,3 +274,48 @@ body {
   position: absolute;
   right: 3rem;
 }
+/* Project - CSS */
+.projects {
+  text-align: center; 
+  margin-top: 3rem;
+}
+.maindiv {
+  width: 95%;
+  min-height: 300px;
+  display:flex;
+  justify-content: space-between;
+  margin:auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.Project_cont {
+  display: block;
+}
+.Project_ImgCont {
+  width: 100%;
+}
+.P_image {
+  width: 90%;
+  height: 300px;
+  margin: 2rem auto;
+  border-radius: 0.25rem;
+}
+.Project_refers {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+.Ref_buttons {
+  width: 120px;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  background-color:black;
+  padding: auto;
+  color: white;
+}
+.div1{
+  width: 48%;
+  background-color: #090E21;
+  border-radius: 0.5rem;
+}
