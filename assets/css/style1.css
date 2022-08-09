@@ -138,6 +138,8 @@ body {
     violet
   );
   animation: glow1 2s infinite alternate;
+  margin-top: 2rem;
+
 }
 .abt {
   margin-top: 2rem;
@@ -295,8 +297,7 @@ body {
   width: 100%;
 }
 .P_image {
-  width: 90%;
-  height: 300px;
+  width: 95%;
   margin: 2rem auto;
   border-radius: 0.25rem;
 }
@@ -306,16 +307,34 @@ body {
   justify-content: space-between;
   margin: 1rem auto;
 }
+.Project_refers a{
+  color: wheat;
+}
 .Ref_buttons {
-  width: 120px;
   border-radius: .5rem;
   font-size: 1.5rem;
   background-color:black;
-  padding: auto;
   color: white;
 }
 .div1{
   width: 48%;
-  background-color: #090E21;
-  border-radius: 0.5rem;
+  background-color: #17051854;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+ @media only screen and (max-width: 600px) {
+  .div1{
+    width: 95%;
+    margin: .5rem;
+    padding: .5rem;
+  }
+  .maindiv{
+    display: block;
+    margin: .5rem;
+  }
+  .Ref_buttons{
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
 }
