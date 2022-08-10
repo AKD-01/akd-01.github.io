@@ -54,7 +54,6 @@ a{
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
   box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
   transition: all 0.4s ease;
-  padding-bottom: 10rem;
   margin-bottom: 5rem;
 }
 #tv:hover {
@@ -92,6 +91,12 @@ button:hover {
   transition-delay: 0.8s;
   background-size: 180px;
   animation: animate 0.8s steps(8) forwards;
+}
+h3{
+  text-align: left;
+  text-decoration: underline;
+    font-size: 1rem;
+    color: darkgray;
 }
 
 @keyframes animate {
