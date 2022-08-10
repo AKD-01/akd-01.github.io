@@ -139,7 +139,6 @@ body {
   );
   animation: glow1 2s infinite alternate;
   margin-top: 2rem;
-
 }
 .abt {
   margin-top: 2rem;
@@ -265,28 +264,28 @@ body {
   }
 }
 
-.bp{
+.bp {
   padding: 3px;
   text-align: center;
   width: 60px;
   height: 2rem;
   background-color: #624d7e;
   color: wheat;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   position: absolute;
   right: 3rem;
 }
 /* Project - CSS */
 .projects {
-  text-align: center; 
+  text-align: center;
   margin-top: 3rem;
 }
 .maindiv {
   width: 95%;
   min-height: 300px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  margin:auto;
+  margin: auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
@@ -295,11 +294,13 @@ body {
 }
 .Project_ImgCont {
   width: 100%;
+  max-height: 15rem;
 }
 .P_image {
-  width: 95%;
+  width: 98%;
   margin: 2rem auto;
   border-radius: 0.25rem;
+  min-height: 250px;
 }
 .Project_refers {
   display: flex;
@@ -307,34 +308,37 @@ body {
   justify-content: space-between;
   margin: 1rem auto;
 }
-.Project_refers a{
+.Project_refers a {
   color: wheat;
 }
 .Ref_buttons {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
-  background-color:black;
+  background-color: black;
   color: white;
 }
-.div1{
+.div1 {
   width: 48%;
   background-color: #17051854;
   border-radius: 2rem;
   margin: 1rem;
 }
 
- @media only screen and (max-width: 600px) {
-  .div1{
+@media only screen and (max-width: 600px) {
+  .div1 {
     width: 95%;
-    margin: .5rem;
-    padding: .5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
-  .maindiv{
+  .maindiv {
     display: block;
-    margin: .5rem;
+    margin: 0.5rem;
   }
-  .Ref_buttons{
+  .Ref_buttons {
     font-size: 1.2rem;
     margin: 0 auto;
+  }
+  .P_image{
+    min-height: 200px;
   }
 }
