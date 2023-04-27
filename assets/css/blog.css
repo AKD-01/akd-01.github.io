@@ -55,6 +55,7 @@ a{
   box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
   transition: all 0.4s ease;
   margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 #tv:hover {
   border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
