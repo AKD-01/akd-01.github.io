@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Understanding ACID Properties in DBMS: Ensuring Data Integrity</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/blog.css" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">Understanding ACID Properties in DBMS: Ensuring Data Integrity</div>
+        <div class="right">
+            <li>
+                <a href="../blog.html"><u>Back to Main Page</u></a>
+            </li>
+        </div>
+    </div>
+    <hr />
+    <h3>2nd September, 2023</h3>
+    <header>
+        <div class="blogcont" id="tv">
+            <div class="content">
+                <img src="https://www.boardinfinity.com/blog/content/images/2023/02/ACID-PROPERTIES.png"
+                    alt="AI" width="600" height="400" style=" display: block; margin-left: auto; margin-right: auto;" />
+                <p>
+                    In the world of database management systems (DBMS), ensuring data integrity is paramount. To achieve
+                    this, DBMS
+                    designers and developers rely on a set of fundamental principles known as ACID properties. ACID,
+                    which stands for
+                    Atomicity, Consistency, Isolation, and Durability, forms the bedrock of database transactions,
+                    ensuring that data
+                    remains reliable and accurate in the face of system failures, concurrent access, and other potential
+                    issues.
+                </p>
+                <p>
+                    <b>Atomicity:</b>
+                    <br />
+                    Atomicity is the first pillar of ACID properties and emphasizes that a database transaction must be
+                    treated as a single,
+                    indivisible unit of work. In other words, either all the changes made during a transaction are
+                    applied to the database,
+                    or none of them are. This property prevents the database from ending up in an inconsistent state due
+                    to incomplete
+                    transactions. If a failure occurs during a transaction, the DBMS ensures that any changes made
+                    before the failure are
+                    rolled back, preserving the integrity of the data.
+                </p>
+                <p>
+                    <b>Consistency:</b>
+                    <br />
+                    Consistency requires that a transaction brings the database from one consistent state to another.
+                    This means that the
+                    transaction must follow certain rules defined by the database schema, ensuring that data remains
+                    valid and adheres to
+                    constraints and integrity rules. If a transaction violates these rules, it is rolled back, and the
+                    database remains in
+                    its previous state. Consistency safeguards against data corruption and maintains the accuracy and
+                    integrity of the
+                    information stored in the database.
+                </p>
+                <p>
+                    <b>Isolation:</b>
+                    <br />
+                    Isolation is the property that ensures that concurrent transactions do not interfere with each
+                    other. It guarantees that
+                    each transaction operates in isolation and is unaware of the existence of other transactions running
+                    simultaneously.
+                    This prevents issues such as data read and write conflicts, ensuring that the results of a
+                    transaction are not affected
+                    by other ongoing transactions. Isolation levels, such as Read Uncommitted, Read Committed,
+                    Repeatable Read, and
+                    Serializable, provide varying degrees of isolation to cater to different application requirements.
+                </p>
+                <p>
+                    <b>Durability:</b>
+                    <br />
+                    The durability property guarantees that once a transaction is committed, its changes will persist
+                    even in the face of
+                    system failures, such as power outages or crashes. To achieve durability, DBMS systems typically use
+                    mechanisms like
+                    write-ahead logging and storage redundancy. This ensures that no matter what happens after a
+                    transaction is successfully
+                    completed, the database remains in a consistent state with the changes permanently saved.
+                </p>
+                <h2>Conclusion</h2>
+                <p>
+                    In the complex world of database management systems, ACID properties are the cornerstones that
+                    uphold data integrity.
+                    These properties work in harmony to ensure that transactions are atomic, maintain data consistency,
+                    operate in
+                    isolation, and provide durability even in the presence of system failures. By adhering to these
+                    principles, DBMS systems
+                    ensure that critical business data remains reliable and accurate, thus instilling confidence in the
+                    reliability and
+                    trustworthiness of the data they manage. Understanding and implementing ACID properties is essential
+                    for anyone working
+                    with databases, as they form the foundation of a robust and dependable data management system.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <h3 style="text-align: center; color: blueviolet">
+                Thanks for Reading🌻
+                <br>
+                Copyright-free images courtesy of
+                <a href="https://pixabay.com/">Pixabay</a>
+            </h3>
+        </footer>
+</body>
+</html>
