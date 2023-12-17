@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unraveling Database Normalization: A Beginner's Guide</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/blog.css" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">Unraveling Database Normalization: A Beginner's Guide</div>
+        <div class="right">
+            <li>
+                <a href="../blog.html"><u>Back to Main Page</u></a>
+            </li>
+        </div>
+    </div>
+    <hr />
+    <h3>2nd December, 2023</h3>
+    <header>
+        <div class="blogcont" id="tv">
+            <div class="content">
+                <img src="https://files.codingninjas.in/article_images/custom-upload-1683804233.webp"
+                    alt="Normalization" width="600" height="400" style=" display: block; margin-left: auto; margin-right: auto;" />
+                <br/>
+                <p>
+                    In the vast realm of databases, the concept of normalization plays a crucial role in organizing and structuring data
+                    efficiently. Imagine your database as a well-organized library where every book has its place, making it easy for you to
+                    find what you need. Database normalization aims to achieve this kind of order, making data retrieval and management a
+                    breeze.
+                </p>
+                <p>
+                    <h2>Understanding the Basics:</h2>
+                    <b>What is Normalization?</b>
+                    <br/>
+                    Normalization is a process that helps eliminate data redundancy and dependency in a database. In simpler terms, it's
+                    like tidying up your room, removing unnecessary duplicates and ensuring each piece of information is in its designated
+                    spot.
+                    <br/>
+                    <br />
+                    <b>Why Normalize?</b>
+                    <br/>
+                    Imagine storing a customer's details in multiple places. If the customer changes their address, you'd have to update it
+                    everywhere, risking inconsistencies. Normalization prevents such headaches by ensuring information is stored in one
+                    place, making updates more straightforward.
+                </p>
+                <p>
+                    <h2>The Normal Forms:</h2>
+                    <b>First Normal Form (1NF):</b>
+                    In 1NF, each column in a table must hold atomic (indivisible) values, avoiding groups or lists. For example, if you're
+                    storing addresses, don't lump city, state, and ZIP code into one column. Instead, have separate columns for each.
+                    <br/>
+                    <br />
+                    <b>Second Normal Form (2NF):</b>
+                    Building on 1NF, 2NF ensures that non-key attributes are fully functionally dependent on the primary key. If a table has
+                    a composite primary key, each non-key attribute should depend on the entire key, not just part of it.
+                    <br/>
+                    <br />
+                    <b>Third Normal Form (3NF):</b>
+                    In 3NF, we further eliminate transitive dependencies. This means that non-key attributes should not depend on other
+                    non-key attributes. Each piece of data should be directly related to the primary key.
+                    <br/>
+                    <br />
+                </p>
+                <p>
+                    <h2>Benefits of Normalization:</h2>
+                    <b>Data Consistency:</b>
+                    With normalization, updates and modifications only need to be made in one place, reducing the chances of
+                    inconsistencies.
+                    <br/>
+                    <br/>
+                    <b>Efficient Storage:</b>
+                    Normalized databases tend to be more space-efficient as redundant data is minimized.
+                    <br/>
+                    <br/>
+                    <b>Simplified Queries:</b>
+                    Writing queries becomes more straightforward since you're dealing with well-organized, streamlined data.
+                    <br/>
+                    <br/>
+                </p>
+                <h2>Conclusion</h2>
+                <p>
+                    Normalization is the backbone of a well-structured and efficient database. By organizing data intelligently, it ensures
+                    that your database remains consistent, easy to maintain, and scalable as your information grows. Embrace normalization,
+                    and you'll find yourself navigating the complex world of databases with greater ease and confidence.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <h3 style="text-align: center; color: blueviolet">
+                Thanks for Reading🌻
+                <br>
+                Copyright-free images courtesy of
+                <a href="https://pixabay.com/">Pixabay</a>
+            </h3>
+        </footer>
+</body>
+
+</html>
